@@ -206,7 +206,7 @@ const AboutMe = () => {
     <div className="w-full h-full overflow-y-auto overflow-x-hidden p-4 md:p-16 relative scroll-smooth">
       {/* 目录箭头和文字 */}
       <div className="absolute top-24 -left-4 md:top-36 md:-left-2 z-50 flex flex-col items-center animate-bounce-in-left pointer-events-none" style={{ '--delay': '0.3s' }}>
-        <div className="font-typewriter font-black text-xl md:text-2xl rotate-[-10deg] text-pink-500 tracking-widest pl-4 drop-shadow-md z-10" style={{ textShadow: '0 0 10px #FF1493, 0 0 20px #FF1493, 0 0 30px #FF1493' }}>目录在这里</div>
+        <div className="font-typewriter font-black text-xl md:text-2xl rotate-[-10deg] text-black tracking-widest pl-4 drop-shadow-md z-10" style={{ textShadow: '0 0 10px #FF1493, 0 0 20px #FF1493, 0 0 30px #FF1493' }}>目录在这里</div>
         <img src={process.env.PUBLIC_URL + '/arrow.png'} alt="arrow" className="w-48 md:w-64 rotate-[-5deg] drop-shadow-md -mt-6 md:-mt-8" />
       </div>
 
