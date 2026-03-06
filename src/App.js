@@ -206,8 +206,8 @@ const AboutMe = () => {
     <div className="w-full h-full overflow-y-auto overflow-x-hidden p-4 md:p-16 relative scroll-smooth">
       {/* 目录箭头和文字 */}
       <div className="absolute top-24 -left-4 md:top-36 md:-left-2 z-50 flex flex-col items-center animate-bounce-in-left pointer-events-none" style={{ '--delay': '0.3s' }}>
-        <div className="font-typewriter font-black text-xl md:text-2xl rotate-[-12deg] mb-1 text-black" style={{ textShadow: '0 0 10px #FF1493, 0 0 20px #FF1493, 0 0 30px #FF1493' }}>目录在这里</div>
-        <img src="/arrow.png" alt="arrow" className="w-48 md:w-64 rotate-[-5deg] drop-shadow-md -mt-6 md:-mt-8" />
+        <div className="font-typewriter font-black text-xl md:text-2xl rotate-[-10deg] text-pink-500 tracking-widest pl-4 drop-shadow-md z-10" style={{ textShadow: '0 0 10px #FF1493, 0 0 20px #FF1493, 0 0 30px #FF1493' }}>目录在这里</div>
+        <img src={process.env.PUBLIC_URL + '/arrow.png'} alt="arrow" className="w-48 md:w-64 rotate-[-5deg] drop-shadow-md -mt-6 md:-mt-8" />
       </div>
 
       <div className="min-h-full flex flex-col justify-center relative z-10">
@@ -263,7 +263,7 @@ const AboutMe = () => {
           </div>
 
           {/* 手绘插画 */}
-          <img src="/hand.png" alt="hand drawing" className="absolute -bottom-32 -right-32 md:-bottom-48 md:-right-64 w-96 md:w-[512px] z-[60] animate-slide-up-hand pointer-events-none drop-shadow-2xl" style={{ '--delay': '0.6s' }} />
+          <img src={process.env.PUBLIC_URL + '/hand.png'} alt="hand drawing" className="absolute -bottom-32 -right-32 md:-bottom-48 md:-right-64 w-96 md:w-[512px] z-[60] animate-slide-up-hand pointer-events-none drop-shadow-2xl" style={{ '--delay': '0.6s' }} />
         </div>
       </div>
     </div>
@@ -319,7 +319,7 @@ const Internship = () => {
         <div className="flex flex-col justify-center mt-12 relative">
           <div className="torn-paper torn-paper-alt p-8 max-w-5xl mx-auto w-full relative">
             {/* Eyes graphic */}
-            <img src="/eyes.png" alt="eyes graphic" className="absolute -top-4 -right-8 md:-top-16 md:-right-20 w-48 md:w-80 z-50 pointer-events-none drop-shadow-xl rotate-[10deg]" />
+            <img src={process.env.PUBLIC_URL + '/eyes.png'} alt="eyes graphic" className="absolute -top-4 -right-8 md:-top-16 md:-right-20 w-48 md:w-80 z-50 pointer-events-none drop-shadow-xl rotate-[10deg]" />
             <WashiTape color="pink" angle="-2deg" left="left-1/4" />
             <div className="flex justify-between items-start mb-8 border-b-4 border-black pb-4">
               <div>
@@ -406,7 +406,7 @@ const Internship = () => {
         {/* GMPC */}
         <div className="flex flex-col justify-center relative mt-16 md:mt-24">
           {/* BLAH graphic */}
-          <img src="/blah.png" alt="blah graphic" className="absolute -top-24 left-4 md:-top-40 md:left-8 w-28 md:w-[180px] z-50 pointer-events-none drop-shadow-lg" />
+          <img src={process.env.PUBLIC_URL + '/blah.png'} alt="blah graphic" className="absolute -top-24 left-4 md:-top-40 md:left-8 w-28 md:w-[180px] z-50 pointer-events-none drop-shadow-lg" />
           <div className="torn-paper torn-paper-alt p-8 md:p-12 max-w-5xl mx-auto w-full relative">
             <WashiTape color="pink" angle="-1deg" left="left-3/4" />
             <h2 className="text-4xl font-black text-center mb-2 uppercase tracking-widest">广东省广告集团</h2>
